@@ -240,30 +240,8 @@ const options = {
         },
       },
     },
-    tags: [
-      {
-        name: 'Health',
-        description: 'Health check endpoints',
-      },
-      {
-        name: 'Authentication',
-        description: 'Seller authentication (login, register, token refresh)',
-      },
-      {
-        name: 'Products',
-        description: 'Product management (CRUD operations)',
-      },
-      {
-        name: 'Orders',
-        description: 'Order management and tracking',
-      },
-      {
-        name: 'File Upload',
-        description: 'Upload product images and payment proofs to Railways',
-      },
-    ],
   },
-  apis: [],
+  apis: ['./src/routes/swagger-docs.ts'],
 };
 
 const specs = swaggerJsdoc(options);
